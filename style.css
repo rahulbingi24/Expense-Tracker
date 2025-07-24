@@ -178,3 +178,44 @@ tr:hover {
     background-color: #d11a2a;
     color: white;
 }
+
+/* 📱 Mobile Responsive Design */
+@media (max-width: 600px) {
+    #form {
+        flex-direction: column;
+        align-items: stretch;
+    }
+
+    #form div {
+        min-width: 100%;
+    }
+
+    #card-section {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 90%;
+    }
+    
+    th,
+    td {
+        padding: px;
+        font-size: 8px;
+
+    }
+
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    button {
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    .delete-btn {
+        font-size: 8px;
+    }
+}
