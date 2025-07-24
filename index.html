@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Expense Tracker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto+Slab:wght@100..900&display=swap"
+        rel="stylesheet">
+    </head>
+    
+    <body>
+    <header>
+        <h1>Expense-Tracker</h1>
+    </header>
+    <main>
+        <section id="form-section">
+            <div id="form">
+                <div>
+                    <label for="amount">Amount:</label>
+                    <input type="number" name="amount" id="amount" min="10" placeholder="Enter Amount">
+                </div>
+                <div>
+                    <label for="transaction-type">Transaction Type:</label>
+                    <select name="transaction-type" id="transaction-type">
+                        <option value="">Select</option>
+                        <option value="Income">Income</option>
+                        <option value="Expense">Expense</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="date">Date:</label>
+                    <input type="date" name="date" id="date">
+                </div>
+                <button id="submit" onclick="submit()">Add</button>
+            </div>
+            
+        </section>
+        <section id="card-section">
+            <div class="card">
+                <h2>
+                    Total Income
+                </h2>
+                <p id="total-income">
+                    
+                </p>
+            </div>
+            <div class="card">
+                <h2>
+                    Total Expense
+                </h2>
+                <p id="total-expense">
+                    
+                </p>
+            </div>
+            <div class="card">
+                <h2>
+                    Balance
+                </h2>
+                <p id="balance">
+                    
+                </p>
+            </div>
+        </section>
+        <section id="table">
+            <table>
+                <thead>
+                    <tr>
+                        <th>Amount</th>
+                        <th>Transaction Type</th>
+                        <th>Transaction Date</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+                
+            </table>
+        </section>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
