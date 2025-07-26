@@ -168,7 +168,7 @@ tr:hover {
 .delete-btn {
     background-color: transparent;
     color: #d11a2a;
-    border: none;
+    border: none; 
     cursor: pointer;
     font-weight: bold;
 }
